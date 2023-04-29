@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Generate Question Paper</title>
+<style>
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #5ba1c4; /* fallback for old browsers */
+  overflow-x: hidden;
+
+  height: 100%;
+
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+h1{text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+</style>
+</head>
+<body>
+<h1>Well! Now you can generate question paper.</h1>
+
+<h2><b>K Levels</b></h2>
+<p>
+<ul>
+  <li>K1 - Remembering and recalling facts with specific answers</li>
+  <li>K2 - Basic understanding of facts and stating main ideas with general answers</li>
+  <li>K3 - Application oriented- Solving Problems</li>
+</ul>  
+</p>
+
+<h2><b>CO Levels (Course Outcome)</b></h2>
+<p>
+<ul>
+  <li>CO1 - To understand the process of communication and the principles of effective communication in business.  </li>
+  <li>CO2 - To study the nature, importance and the scope of business communication.</li>
+</ul>  
+</p>
+<div>  <form name="question" action="QuestionPaperGenerator">
+  <table>
+    <tr>
+  <td><label><p style="color:black">Enter type of examination</label></td>
+  <td><input type="text" name="examname"></td>
+  </tr>
+   <tr>
+  <td><label><p style="color:black">Enter Course name & Course code</label></td>
+  <td><input type="text" name="course"></td>
+  </tr>
+     <tr>
+  <td><label><p style="color:black">Enter date of Examination</label></td>
+  <td><input type="date" name="date"></td>
+  </tr>
+  <tr>
+  <td><label><p style="color:black">Enter time alloted for Examination</label></td>
+  <td><input type="text" name="time"></td>
+  </tr>
+  <tr>
+  <td><label><p style="color:black"> Number of part A questions</label> </td>
+   <td><input type="number" name="rownum"></td>
+  </tr>
+  <tr>
+  <td><label><p style="color:black">Number of part B questions</label></td>
+  <td><input type="number" name="rownum1"></td>
+  </tr>
+  <tr>
+  <td></td>
+  <td><input type="submit" value="Generate Question paper"></td>
+  </tr>
+ </table></form>
+</div>
+</body>
+</html>
